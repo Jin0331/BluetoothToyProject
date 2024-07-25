@@ -8,17 +8,37 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var bluetoothManager = BluetoothManager() // this is Bluetooth manager
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Button(action: {
+                bluetoothManager.toggleBluetooth()
+            }) {
+                Text(bluetoothManager.isBluetoothEnabled ? "Turn Off Bluetooth" : "Turn On Bluetooth")
+                    .padding()
+            }
+            
+            Text("Bluetooth is \(bluetoothManager.isBluetoothEnabled ? "enabled" : "disabled")")
+                .padding()
+            
+            List(bluetoothManager.discoveredPeripherals, id: \.identifier) { peripheral in
+                
+                if let name = peripheral.name {
+                    Text(name)
+                        .onTapGesture {
+                            bluetoothManager.connect(to: peripheral)
+                        }
+                }
+            }
+            
+            Text("\(bluetoothManager.receivedData)")
         }
-        .padding()
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }
