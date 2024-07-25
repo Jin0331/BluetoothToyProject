@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB3C0CC52C521AA80022E8F8 /* BleutoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3C0CC42C521AA80022E8F8 /* BleutoothManager.swift */; };
 		DBD8B81D2C5209D10076F01D /* BluetoothToyProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD8B81C2C5209D10076F01D /* BluetoothToyProjectApp.swift */; };
 		DBD8B81F2C5209D10076F01D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD8B81E2C5209D10076F01D /* ContentView.swift */; };
 		DBD8B8212C5209D20076F01D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBD8B8202C5209D20076F01D /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB3C0CC42C521AA80022E8F8 /* BleutoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleutoothManager.swift; sourceTree = "<group>"; };
 		DBD8B8192C5209D10076F01D /* BluetoothToyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluetoothToyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBD8B81C2C5209D10076F01D /* BluetoothToyProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothToyProjectApp.swift; sourceTree = "<group>"; };
 		DBD8B81E2C5209D10076F01D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				DBD8B81E2C5209D10076F01D /* ContentView.swift */,
 				DBD8B8202C5209D20076F01D /* Assets.xcassets */,
 				DBD8B8222C5209D20076F01D /* Preview Content */,
+				DB3C0CC42C521AA80022E8F8 /* BleutoothManager.swift */,
 			);
 			path = BluetoothToyProject;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB3C0CC52C521AA80022E8F8 /* BleutoothManager.swift in Sources */,
 				DBD8B81F2C5209D10076F01D /* ContentView.swift in Sources */,
 				DBD8B81D2C5209D10076F01D /* BluetoothToyProjectApp.swift in Sources */,
 			);
